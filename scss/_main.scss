@@ -1,0 +1,109 @@
+body {
+    background-color: #D3FFE9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.action {
+    margin: 0 0 20px 0;
+}
+
+.input {
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    border: 2px solid black;
+}
+
+.btn {
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #9BC4BC;
+    border: 2px solid black;
+    transition: opacity .3s ease;
+    margin: 0 5px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.display {
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    max-height: 80px;
+}
+
+.given-array {
+    & .display {
+        background-color: #5ac7b3;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            width: 15px;
+            background-color: #43a391;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: #317e70;
+        }
+    }
+}
+
+.sorted {
+    & .display {
+        background-color: #41b1cd;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            width: 15px;
+            background-color: #2d91aa;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(27, 112, 133);
+        }
+    }
+}
+
+.speed {
+    & .display {
+        background-color: rgb(211, 125, 125);
+    }
+}
+
+.result {
+    & .display {
+        background-color: rgb(97, 133, 215);
+    }
+}
+
+.small {
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 15px;
+}
